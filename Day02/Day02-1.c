@@ -1,41 +1,37 @@
 ﻿#include <stdio.h>
-int main()
-{
-	int op;
-	printf("첫번째 정수 입력 : ");
-	scanf_s("%d", &op);
 
-	double num1, num2, num3, num4;
-	scanf_s("%lf", &num1);
-	printf("첫번째 숫자");
+int main() {
+    double num1, num2;
+    char op;
 
-	scanf_s("lf", &num2);
-	printf("두번째 숫자");
+    printf("첫 번째 숫자를 입력하세요: ");
+    scanf_s("%lf", &num1);
 
-	scnaf_s("lf", &num3);
-	printf("세번째 숫자");
+    printf("연산자를 입력하세요 (+, -, *, /): ");
+    scanf_s(" %c", &op);
 
-	scnaf_s("lf", &num4);
-	printf("네번째 숫자");
+    printf("두 번째 숫자를 입력하세요: ");
+    scanf_s("%lf", &num2);
 
+    switch (op) {
+    case '+':
+        printf("결과: %.2lf\n", num1 + num2);
+        break;
+    case '-':
+        printf("결과: %.2lf\n", num1 - num2);
+        break;
+    case '*':
+        printf("결과: %.2lf\n", num1 * num2);
+        break;
+    case '/':
+        if (num2 != 0)
+            printf("결과: %.2lf\n", num1 / num2);
+        else
+            printf("0으로 나눌 수 없습니다.\n");
+        break;
+    default:
+        printf("유효하지 않은 연산자입니다.\n");
+    }
 
-	double result = 0.0;
-	if (op == 1) {
-		result = num1 + num2;
-	}
-	else if (op == 2) {
-		result = num1 - num2;
-	}
-	else if (op == 3) {
-		result = num1 * num2;
-	}
-	else if (op == 4)
-	{
-		result = num1 / num2;
-	}
-	else {
-		printf("잘못입력했습니다.\n");
-	}
-	printf("result,lf\n", result);
-	return 0;
+    return 0;
 }
