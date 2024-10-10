@@ -23,7 +23,7 @@ int main() {
         if (i % 10000000 == 0) {
             pi_estimate = 4.0 * inside_circle / i;
             progress = (i * 100) / iterations;
-            squares_to_display = progress / 2;
+            squares_to_display = progress / 5;
 
             printf("%2.d%% 진행.. 원주율: %.6f ", progress, pi_estimate);
 
