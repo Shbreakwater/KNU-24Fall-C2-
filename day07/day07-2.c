@@ -25,7 +25,7 @@ int main() {
             progress = (i * 100) / iterations;
             squares_to_display = progress / 2;
 
-            printf("%d%% 진행.. 원주율: %.6f ", progress, pi_estimate);
+            printf("%2.d%% 진행.. 원주율: %.6f ", progress, pi_estimate);
 
             
             for (int j = 0; j < squares_to_display; j++) {
