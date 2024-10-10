@@ -40,7 +40,7 @@ int main() {
     }
 
     pi_estimate = 4.0 * inside_circle / iterations;
-    printf("최종 원주율: %.6f\n", pi_estimate);
+    printf("원주율: % .6f\n", pi_estimate);
 
     return 0;
 }
