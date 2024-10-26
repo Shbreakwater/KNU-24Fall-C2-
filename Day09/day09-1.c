@@ -62,7 +62,7 @@ int main() {
         printf("명령 입력: ");
 
         if (scanf_s("%d", &command) != 1) {
-            printf("잘못된 입력입니다. 숫자를 입력하세요.\n");
+            printf("잘못된 입력입니다. 숫자를 입력해주세요.\n");
             while (getchar() != '\n');
             continue;
         }
