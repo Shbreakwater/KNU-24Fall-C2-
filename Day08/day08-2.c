@@ -56,5 +56,6 @@ int main() {
 
     movePointer(array);
 
+    
     return 0;
 }
