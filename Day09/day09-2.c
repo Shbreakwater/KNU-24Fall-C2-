@@ -24,6 +24,7 @@ int main() {
         printf("ªÛ«∞ ID: ");
         scanf_s("%d", &id);
 
+
         if (id == 0) {
             break;
         }
