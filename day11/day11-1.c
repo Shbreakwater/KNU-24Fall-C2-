@@ -8,6 +8,7 @@ int main() {
     printf("이차방정식의 계수 a, b, c를 입력하세요 (ax^2 + bx + c = 0): ");
     scanf_s("%lf %lf %lf", &a, &b, &c);
 
+
     fan = b * b - 4 * a * c;
 
     if (fan > 0) {
